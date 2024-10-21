@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerenciador de Conta</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciador de Conta</h1>
+
+        <div id="formularioCriarConta">
+            <h2>Criar Conta</h2>
+            <input type="text" id="nomeUsuario" placeholder="Nome do Usuário" required>
+            <input type="text" id="numeroAgencia" placeholder="Número da Agência" required>
+            <input type="password" id="senhaUsuario" placeholder="Senha" required>
+            <button id="criarUsuarioBtn">Criar Conta</button>
+        </div>
+
+        <div id="formularioLogin">
+            <h2>Login</h2>
+            <input type="text" id="loginNomeUsuario" placeholder="Nome do Usuário" required>
+            <input type="password" id="loginSenhaUsuario" placeholder="Senha" required>
+            <button id="loginBtn">Login</button>
+        </div>
+
+        <div id="formularioAcessarConta" style="display: none;">
+            <h2>Acessar Conta</h2>
+            <input type="text" id="nomeUsuarioAcesso" placeholder="Nome do Usuário" required>
+            <input type="password" id="senhaUsuarioAcesso" placeholder="Senha" required>
+            <button id="acessarContaBtn">Acessar Conta</button>
+        </div>
+
+        <div id="contaArea" style="display: none;">
+            <h2>Conta: <span id="usuarioAtual"></span></h2>
+            <h2>Histórico de Contas Criadas</h2>
+            <ul id="historicoContas"></ul>
+            <button id="sairBtn">Sair</button>
+        </div>
+    </div>
+
+    <script src="Script2.js"></script>
+</body>
+</html>

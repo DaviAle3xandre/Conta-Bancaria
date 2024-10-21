@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nubank - Tela Inicial</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cabe">
+            <header>
+                <h1>Nubank <span id="nomeUsuarioDisplay"></span></h1>
+                
+                <button id="perfilBtn">
+                    <a href="/index2.html">Meu Perfil</a>
+                </button>
+                
+                <button id="deslogarBtn">
+                    <a href="/index2.html">Deslogar</a>
+                </button>
+            </header>
+            <div>
+                <div class="saldo">
+                    <h2>Saldo Disponível</h2>
+                    <p id="saldoValor">0,00</p>
+                </div>
+            </div>
+        </div>
+    
+        <section class="acoes">
+            <button id="depositarBtn" class="acao-btn">Depositar</button>
+            <button id="sacarBtn" class="acao-btn">Sacar</button>
+            <button id="transferirBtn" class="acao-btn">Transferir</button>
+            <button id="pagarBtn" class="acao-btn">Pagar</button>
+        </section>
+        
+        <section>
+        
+            <div id="historico"></div>
+            <button id="historicoBtn">Ver Histórico</button>
+
+            <h3>Depósito</h3>
+            <input type="number" id="valorDeposito" placeholder="Valor para Depositar">
+            <h3>Saque</h3>
+            <input type="number" id="valorSaque" placeholder="Valor para Sacar">
+        </section>
+
+        <section class="transacoes">
+            <h2>Transações Recentes</h2>
+            <ul id="transacoesLista">
+                <li>Compra - R$ 50,00</li>
+                <li>Transferência - R$ 200,00</li>
+                <li>Pagamento - R$ 100,00</li>
+                <li>Depósito - R$ 300,00</li>
+            </ul>
+        </section>
+
+        <div id="resultado"></div> 
+        
+    </div>
+   
+    <script src="Script.js"></script>
+</body>
+</html>
